@@ -39,28 +39,19 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero */}
-      <section className="relative bg-primary text-primary-foreground overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9Indvb2QiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTTAgMzBINjAiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCBmaWxsPSJ1cmwoI3dvb2QpIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIi8+PC9zdmc+')] opacity-50" />
-        <div className="container relative py-20 md:py-32 text-center">
-          <p className="text-secondary text-sm font-body uppercase tracking-widest mb-4">Est. 1880's · Lynch Station, Virginia</p>
-          <h1 className="text-4xl md:text-6xl font-heading font-bold leading-tight mb-6 max-w-4xl mx-auto">
-            Good food, good neighbors, and God's blessings
+      <section className="relative text-white overflow-hidden aspect-[3/1]">
+        <div className="absolute inset-0 w-full h-full bg-[url('/Carters_General/Hero_Background.png')] bg-cover bg-center bg-no-repeat" />
+        {/* Removed dark overlay to show original image color */}
+          <div className="container absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-10 w-full px-4">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold leading-tight mb-6 max-w-4xl mx-auto text-primary">
+            Good food, Good neighbors,<br />
+            <span className="block">and God's blessings</span>
           </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-8 font-body">
-            Welcome to Carter's General Store & Deli — where every meal is made with love and every visitor is treated like family.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-body">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-2 md:mt-4">
+            <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-body h-10 px-4 text-sm md:h-12 md:px-8 md:text-base">
               <Link to="/menu">
                 View Our Menu
-                <ChevronRight className="h-4 w-4 ml-1" />
               </Link>
-            </Button>
-            <Button asChild size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-body">
-              <a href="tel:4343091753">
-                <Phone className="h-4 w-4 mr-2" />
-                Call 434-309-1753
-              </a>
             </Button>
           </div>
         </div>
