@@ -20,8 +20,8 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b border-border">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <span className="text-xl font-heading font-bold text-primary">Carter's</span>
-          <span className="hidden sm:inline text-sm text-muted-foreground font-body">General Store & Deli</span>
+          <span className="text-xl font-heading font-bold text-primary">Carter's General Store</span>
+          <span className="hidden sm:inline text-sm text-muted-foreground font-body">Outpost & Deli</span>
         </Link>
 
         {/* Desktop Nav */}
